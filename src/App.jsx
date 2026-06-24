@@ -4,12 +4,13 @@ import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
+import { Transactions } from "./components/Transactions";
+import { SavingStatus } from "./components/SavingsStatus";
+import { AccountList } from "./components/AccountList";
 
 import Card from "./components/Card";
-import { SavingStatus } from "./components/SavingsStatus";
 
 import styles from "./app.module.css";
-import { Transactions } from "./components/Transactions";
 
 function App() {
   return (
@@ -44,17 +45,9 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Header>Minhas Contas</Card.Header>
               <Card.Body>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
-                <p>200</p>
+                <AccountList />
               </Card.Body>
             </Card>
           </section>

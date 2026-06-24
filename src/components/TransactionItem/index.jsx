@@ -5,7 +5,7 @@ const formater = new Intl.NumberFormat("pt-BR", {
   currency: "BRL",
 });
 
-export const TrasactionItem = ({ item }) => {
+export const TransactionItem = ({ item }) => {
   const detailsAddicionalClassName =
     item.value >= 0 ? styles.income : styles.expanse;
   return (
