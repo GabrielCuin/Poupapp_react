@@ -1,11 +1,22 @@
+import styles from "./transactionitem.module.css";
+
+const formater = new Intl.NumberFormat("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+});
+
 export const TrasactionItem = ({ item }) => {
+  const detailsAddicionalClassName =
+    item.value >= 0 ? styles.income : styles.expanse;
   return (
-    <div>
-      <div>
+    <div className={styles.transaction}>
+      <div className={[styles.details, detailsAddicionalClassName].join(" ")}>
         <p>{item.description}</p>
-        <p>{item.value}</p>
+        <p>{formater.format(item.value)}</p>
       </div>
-      <div>{item.date}</div>
+      <div className={styles.date}>
+        {new Date(item.date).toLocaleDateString("pt-BR")}
+      </div>
     </div>
   );
 };

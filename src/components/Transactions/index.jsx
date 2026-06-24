@@ -1,6 +1,7 @@
 import { Button } from "../Button";
 import { TrasactionItem } from "../TrasactionItem";
 import { IconCurrency } from "../Icons";
+import styles from "./transactions.module.css";
 
 export const Transactions = () => {
   const items = [
@@ -27,7 +28,7 @@ export const Transactions = () => {
   ];
   return (
     <>
-      <ul>
+      <ul className={styles.list}>
         {items.map((trasactionItem, index) => {
           return (
             <li key={index}>
@@ -36,9 +37,11 @@ export const Transactions = () => {
           );
         })}
       </ul>
-      <Button>
-        <IconCurrency /> Adicionar Transação
-      </Button>
+      <div className={styles.actions}>
+        <Button>
+          <IconCurrency /> Adicionar Transação
+        </Button>
+      </div>
     </>
   );
 };
