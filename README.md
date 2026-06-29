@@ -15,21 +15,21 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## 🛠️ Como rodar o projeto
+## 🛠️ Run the project
 
-Após baixar o projeto, siga os passos abaixo para executar localmente:
+After downloading the project, follow the steps below to run it locally:
 
-1. Certifique-se de que você já tem Node.js instalado ([guia oficial](https://nodejs.org/en/download/)).
-2. No terminal, navegue até a pasta do projeto e instale as dependências:
+1. Make sure you already have Node.js installed ([guia oficial](https://nodejs.org/en/download/)).
+2. In the terminal, navigate to the project folder and install the dependencies:
 
 ```bash
 npm install
 ```
 
-3. Execute o projeto:
+3. Run the project:
 
 ```bash
 npm run dev
 ```
 
-4. Acesse no navegador: [http://localhost:5173](http://localhost:5173) (Vite).
+4. Access it in your browser: [http://localhost:5173](http://localhost:5173) (Vite).
